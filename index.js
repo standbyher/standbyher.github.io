@@ -3,12 +3,751 @@ _main.style.width = document.body.offsetWidth + 'px';
 _main.style.height = document.body.offsetHeight + 'px'
 
 var mydata = [{
+    "name": "四川",
+    "cityList": [{
+        "cityName": "阿坝",
+        "value": 1,
+        "schools": [{
+            "schoolName": "阿坝师范学院"
+        }]
+    }, {
+        "cityName": "成都",
+        "value": 15,
+        "schools": [{
+            "schoolName": "成都理工大学"
+        }, {
+            "schoolName": "成都师范学院"
+        }, {
+            "schoolName": "成都西南民族大学"
+        }, {
+            "schoolName": "成都信息工程大学"
+        }, {
+            "schoolName": "成都医学院"
+        }, {
+            "schoolName": "双流中学"
+        }, {
+            "schoolName": "四川大学"
+        }, {
+            "schoolName": "四川旅游学院"
+        }, {
+            "schoolName": "四川美术学院"
+        }, {
+            "schoolName": "四川师范大学"
+        }, {
+            "schoolName": "四川外国语大学成都学院"
+        }, {
+            "schoolName": "棠湖中学"
+        }, {
+            "schoolName": "西南交通大学"
+        }, {
+            "schoolName": "西南交通大学希望学院"
+        }, {
+            "schoolName": "西南民族大学"
+        }]
+    }, {
+        "cityName": "乐山",
+        "value": 1,
+        "schools": [{
+            "schoolName": "乐山师范学院"
+        }]
+    }, {
+        "cityName": "攀枝花",
+        "value": 1,
+        "schools": [{
+            "schoolName": "攀枝花学院"
+        }]
+    }, {
+        "cityName": "甘孜",
+        "value": 1,
+        "schools": [{
+            "schoolName": "四川民族学院"
+        }]
+    }, {
+        "cityName": "雅安",
+        "value": 1,
+        "schools": [{
+            "schoolName": "四川农业大学"
+        }]
+    }, {
+        "cityName": "自贡",
+        "value": 1,
+        "schools": [{
+            "schoolName": "四川卫生康复职业学院"
+        }]
+    }, {
+        "cityName": "南充",
+        "value": 1,
+        "schools": [{
+            "schoolName": "西华师范大学"
+        }]
+    }, {
+        "cityName": "泸州",
+        "value": 1,
+        "schools": [{
+            "schoolName": "西南医科大学"
+        }]
+    }]
+}, {
+    "name": "安徽",
+    "cityList": [{
+        "cityName": "芜湖",
+        "value": 1,
+        "schools": [{
+            "schoolName": "安徽师范大学"
+        }]
+    }, {
+        "cityName": "合肥",
+        "value": 2,
+        "schools": [{
+            "schoolName": "安徽新华学院"
+        }, {
+            "schoolName": "合肥工业大学"
+        }]
+    }, {
+        "cityName": "蚌埠",
+        "value": 1,
+        "schools": [{
+            "schoolName": "蚌埠学院"
+        }]
+    }, {
+        "cityName": "黄山",
+        "value": 1,
+        "schools": [{
+            "schoolName": "黄山学院"
+        }]
+    }, {
+        "cityName": "六安",
+        "value": 1,
+        "schools": [{
+            "schoolName": "皖西学院官微"
+        }]
+    }, {
+        "cityName": "宿州",
+        "value": 1,
+        "schools": [{
+            "schoolName": "宿州学院"
+        }]
+    }]
+}, {
+    "name": "河南",
+    "cityList": [{
+        "cityName": "安阳",
+        "value": 1,
+        "schools": [{
+            "schoolName": "安阳师范学院"
+        }]
+    }, {
+        "cityName": "郑州",
+        "value": 8,
+        "schools": [{
+            "schoolName": "河南财经政法大学"
+        }, {
+            "schoolName": "河南中医药大学"
+        }, {
+            "schoolName": "郑州大学"
+        }, {
+            "schoolName": "郑州大学国际学院"
+        }, {
+            "schoolName": "郑州师范学院"
+        }, {
+            "schoolName": "郑州市第十中学"
+        }, {
+            "schoolName": "中原工学院"
+        }, {
+            "schoolName": "中原文化艺术学院"
+        }]
+    }, {
+        "cityName": "开封",
+        "value": 1,
+        "schools": [{
+            "schoolName": "河南大学"
+        }]
+    }, {
+        "cityName": "新乡",
+        "value": 3,
+        "schools": [{
+            "schoolName": "河南工学院"
+        }, {
+            "schoolName": "河南师范大学"
+        }, {
+            "schoolName": "新乡医学院"
+        }]
+    }, {
+        "cityName": "洛阳",
+        "value": 1,
+        "schools": [{
+            "schoolName": "洛阳师范学院"
+        }]
+    }, {
+        "cityName": "商丘",
+        "value": 2,
+        "schools": [{
+            "schoolName": "商丘师范学院"
+        }, {
+            "schoolName": "商丘市第一高级中学"
+        }]
+    }]
+}, {
+    "name": "澳门",
+    "cityList": [{
+        "cityName": "澳门",
+        "value": 1,
+        "schools": [{
+            "schoolName": "澳门城市大学"
+        }]
+    }]
+}, {
+    "name": "内蒙古",
+    "cityList": [{
+        "cityName": "包头",
+        "value": 1,
+        "schools": [{
+            "schoolName": "包头师范学院"
+        }]
+    }, {
+        "cityName": "呼和浩特",
+        "value": 2,
+        "schools": [{
+            "schoolName": "内蒙古财经大学"
+        }, {
+            "schoolName": "内蒙古医科大学"
+        }]
+    }, {
+        "cityName": "通辽",
+        "value": 1,
+        "schools": [{
+            "schoolName": "内蒙古民族大学"
+        }]
+    }, {
+        "cityName": "乌兰浩特",
+        "value": 1,
+        "schools": [{
+            "schoolName": "乌兰浩特一中"
+        }]
+    }]
+}, {
+    "name": "河北",
+    "cityList": [{
+        "cityName": "保定",
+        "value": 4,
+        "schools": [{
+            "schoolName": "保定学院音乐"
+        }, {
+            "schoolName": "河北保定师范附属学校"
+        }, {
+            "schoolName": "河北大学"
+        }, {
+            "schoolName": "华北电力大学保定"
+        }]
+    }, {
+        "cityName": "张家口",
+        "value": 1,
+        "schools": [{
+            "schoolName": "河北北方学院"
+        }]
+    }, {
+        "cityName": "石家庄",
+        "value": 6,
+        "schools": [{
+            "schoolName": "河北地质大学"
+        }, {
+            "schoolName": "河北经贸大学"
+        }, {
+            "schoolName": "河北科技大学"
+        }, {
+            "schoolName": "河北师范大学"
+        }, {
+            "schoolName": "河北政法职业学院"
+        }, {
+            "schoolName": "河北中医学院"
+        }]
+    }, {
+        "cityName": "衡水",
+        "value": 1,
+        "schools": [{
+            "schoolName": "衡水市第二中学"
+        }]
+    }]
+}, {
+    "name": "北京",
+    "cityList": [{
+        "cityName": "北京",
+        "value": 30,
+        "schools": [{
+            "schoolName": "北京第二外国语学院"
+        }, {
+            "schoolName": "北京工商大学"
+        }, {
+            "schoolName": "北京工业大学"
+        }, {
+            "schoolName": "北京航空航天大学"
+        }, {
+            "schoolName": "北京化工大学"
+        }, {
+            "schoolName": "北京建筑大学"
+        }, {
+            "schoolName": "北京交通大学"
+        }, {
+            "schoolName": "北京科技大学"
+        }, {
+            "schoolName": "北京理工大学"
+        }, {
+            "schoolName": "北京师范大学"
+        }, {
+            "schoolName": "北京体育大学"
+        }, {
+            "schoolName": "北京外国语大学"
+        }, {
+            "schoolName": "北京邮电大学"
+        }, {
+            "schoolName": "北京语言大学 "
+        }, {
+            "schoolName": "北京中国地质大学"
+        }, {
+            "schoolName": "对外经济贸易大学"
+        }, {
+            "schoolName": "对外贸易经济大学"
+        }, {
+            "schoolName": "首都经济贸易大学"
+        }, {
+            "schoolName": "首都师范大学"
+        }, {
+            "schoolName": "首都医科大学"
+        }, {
+            "schoolName": "中国矿业大学"
+        }, {
+            "schoolName": "中国劳动关系学院"
+        }, {
+            "schoolName": "中国农业大学"
+        }, {
+            "schoolName": "中国人民大学"
+        }, {
+            "schoolName": "中国人民公安大学"
+        }, {
+            "schoolName": "中国社会科学院大学"
+        }, {
+            "schoolName": "中国政法大学 "
+        }, {
+            "schoolName": "中央财经大学"
+        }, {
+            "schoolName": "中央美术学院"
+        }, {
+            "schoolName": "中央民族大学"
+        }]
+    }]
+}, {
+    "name": "山东",
+    "cityList": [{
+        "cityName": "威海",
+        "value": 1,
+        "schools": [{
+            "schoolName": "北京交通大学威海校区"
+        }]
+    }, {
+        "cityName": "菏泽",
+        "value": 1,
+        "schools": [{
+            "schoolName": "菏泽学院"
+        }]
+    }, {
+        "cityName": "济南",
+        "value": 8,
+        "schools": [{
+            "schoolName": "济南大学"
+        }, {
+            "schoolName": "山东财经大学"
+        }, {
+            "schoolName": "山东大学"
+        }, {
+            "schoolName": "山东女子学院 "
+        }, {
+            "schoolName": "山东省实验中学东校"
+        }, {
+            "schoolName": "山东师范大学"
+        }, {
+            "schoolName": "山东艺术学院"
+        }, {
+            "schoolName": "山东政法学院"
+        }]
+    }, {
+        "cityName": "烟台",
+        "value": 1,
+        "schools": [{
+            "schoolName": "鲁东大学"
+        }]
+    }, {
+        "cityName": "青岛",
+        "value": 5,
+        "schools": [{
+            "schoolName": "青岛大学"
+        }, {
+            "schoolName": "青岛理工大学"
+        }, {
+            "schoolName": "青岛农业大学"
+        }, {
+            "schoolName": "山东科技大学 "
+        }, {
+            "schoolName": "中国海洋大学"
+        }]
+    }, {
+        "cityName": "曲阜",
+        "value": 1,
+        "schools": [{
+            "schoolName": "曲阜师范大学"
+        }]
+    }, {
+        "cityName": "泰安",
+        "value": 3,
+        "schools": [{
+            "schoolName": "山东第一医科大学"
+        }, {
+            "schoolName": "山东农业大学"
+        }, {
+            "schoolName": "泰山学院"
+        }]
+    }]
+}, {
+    "name": "广东",
+    "cityList": [{
+        "cityName": "珠海",
+        "value": 1,
+        "schools": [{
+            "schoolName": "北京师范大学珠海校区"
+        }]
+    }, {
+        "cityName": "惠州",
+        "value": 2,
+        "schools": [{
+            "schoolName": "博罗县华侨中学"
+        }, {
+            "schoolName": "惠州市第一中学"
+        }]
+    }, {
+        "cityName": "中山",
+        "value": 1,
+        "schools": [{
+            "schoolName": "电子科技大学中山学院"
+        }]
+    }, {
+        "cityName": "广州",
+        "value": 12,
+        "schools": [{
+            "schoolName": "广东第二师范学院"
+        }, {
+            "schoolName": "广东金融学院"
+        }, {
+            "schoolName": "广东石油化工学院"
+        }, {
+            "schoolName": "广东实验中学"
+        }, {
+            "schoolName": "广东外语外贸大学"
+        }, {
+            "schoolName": "广州大学"
+        }, {
+            "schoolName": "广州华商职业学院"
+        }, {
+            "schoolName": "广州市第四中学"
+        }, {
+            "schoolName": "汇景实验学校"
+        }, {
+            "schoolName": "暨南大学"
+        }, {
+            "schoolName": "星海音乐学院"
+        }, {
+            "schoolName": "中山大学"
+        }]
+    }, {
+        "cityName": "湛江",
+        "value": 2,
+        "schools": [{
+            "schoolName": "广东海洋大学"
+        }, {
+            "schoolName": "岭南师范学院"
+        }]
+    }, {
+        "cityName": "东莞",
+        "value": 2,
+        "schools": [{
+            "schoolName": "广东医科大学"
+        }, {
+            "schoolName": "中山大学新华学院"
+        }]
+    }, {
+        "cityName": "佛山",
+        "value": 1,
+        "schools": [{
+            "schoolName": "华南师范大学"
+        }]
+    }, {
+        "cityName": "深圳",
+        "value": 3,
+        "schools": [{
+            "schoolName": "深圳大学"
+        }, {
+            "schoolName": "深圳市职业技术学院"
+        }, {
+            "schoolName": "深圳职业技术学院"
+        }]
+    }, {
+        "cityName": "江门",
+        "value": 1,
+        "schools": [{
+            "schoolName": "五邑大学"
+        }]
+    }]
+}, {
+    "name": "江苏",
+    "cityList": [{
+        "cityName": "常州",
+        "value": 1,
+        "schools": [{
+            "schoolName": "常州大学"
+        }]
+    }, {
+        "cityName": "南京",
+        "value": 20,
+        "schools": [{
+            "schoolName": "东南大学"
+        }, {
+            "schoolName": "河海大学 "
+        }, {
+            "schoolName": "江苏第二师范学院"
+        }, {
+            "schoolName": "金陵科技学院"
+        }, {
+            "schoolName": "南京传媒学院"
+        }, {
+            "schoolName": "南京工程学院"
+        }, {
+            "schoolName": "南京航空航天大学"
+        }, {
+            "schoolName": "南京航空航天大学金城学院"
+        }, {
+            "schoolName": "南京理工大学"
+        }, {
+            "schoolName": "南京农业大学"
+        }, {
+            "schoolName": "南京审计大学"
+        }, {
+            "schoolName": "南京特殊教育师范学院"
+        }, {
+            "schoolName": "南京外国语学校"
+        }, {
+            "schoolName": "南京信息工程大学"
+        }, {
+            "schoolName": "南京医科大学"
+        }, {
+            "schoolName": "南京医科大学康达学院"
+        }, {
+            "schoolName": "南京艺术学院"
+        }, {
+            "schoolName": "南京中医药大学"
+        }, {
+            "schoolName": "中国传媒大学南广学院"
+        }, {
+            "schoolName": "中国药科大学"
+        }]
+    }, {
+        "cityName": "无锡",
+        "value": 1,
+        "schools": [{
+            "schoolName": "江南大学"
+        }]
+    }, {
+        "cityName": "徐州",
+        "value": 2,
+        "schools": [{
+            "schoolName": "江苏师范大学"
+        }, {
+            "schoolName": "徐州工程学院"
+        }]
+    }, {
+        "cityName": "苏州",
+        "value": 2,
+        "schools": [{
+            "schoolName": "苏州大学"
+        }, {
+            "schoolName": "苏州科技大学"
+        }]
+    }, {
+        "cityName": "盐城",
+        "value": 1,
+        "schools": [{
+            "schoolName": "盐城工学院"
+        }]
+    }]
+}, {
+    "name": "云南",
+    "cityList": [{
+        "cityName": "大理",
+        "value": 1,
+        "schools": [{
+            "schoolName": "大理大学"
+        }]
+    }, {
+        "cityName": "昆明",
+        "value": 4,
+        "schools": [{
+            "schoolName": "云南大学"
+        }, {
+            "schoolName": "云南民族大学"
+        }, {
+            "schoolName": "云南农业大学"
+        }, {
+            "schoolName": "云南中医药大学"
+        }]
+    }]
+}, {
+    "name": "辽宁",
+    "cityList": [{
+        "cityName": "大连",
+        "value": 4,
+        "schools": [{
+            "schoolName": "大连东软信息学院"
+        }, {
+            "schoolName": "大连民族大学"
+        }, {
+            "schoolName": "大连外国语大学"
+        }, {
+            "schoolName": "东北财经大学"
+        }]
+    }, {
+        "cityName": "沈阳",
+        "value": 8,
+        "schools": [{
+            "schoolName": "东北大学"
+        }, {
+            "schoolName": "辽宁大学"
+        }, {
+            "schoolName": "沈阳大学"
+        }, {
+            "schoolName": "沈阳化工大学"
+        }, {
+            "schoolName": "沈阳化工大学 "
+        }, {
+            "schoolName": "沈阳农业大学"
+        }, {
+            "schoolName": "沈阳师范大学"
+        }, {
+            "schoolName": "沈阳音乐学院"
+        }]
+    }]
+}, {
+    "name": "黑龙江",
+    "cityList": [{
+        "cityName": "哈尔滨",
+        "value": 3,
+        "schools": [{
+            "schoolName": "东北农业大学"
+        }, {
+            "schoolName": "哈尔滨商业大学"
+        }, {
+            "schoolName": "黑龙江大学"
+        }]
+    }, {
+        "cityName": "鸡西",
+        "value": 1,
+        "schools": [{
+            "schoolName": "黑龙江工业学院"
+        }]
+    }, {
+        "cityName": "牡丹江",
+        "value": 1,
+        "schools": [{
+            "schoolName": "牡丹江医学院"
+        }]
+    }]
+}, {
+    "name": "福建",
+    "cityList": [{
+        "cityName": "福州",
+        "value": 8,
+        "schools": [{
+            "schoolName": "福建江夏学院"
+        }, {
+            "schoolName": "福建农林大学"
+        }, {
+            "schoolName": "福建商学院"
+        }, {
+            "schoolName": "福建师范大学"
+        }, {
+            "schoolName": "福州大学"
+        }, {
+            "schoolName": "福州大学至诚学院"
+        }, {
+            "schoolName": "福州理工学院"
+        }, {
+            "schoolName": "闽江学院"
+        }]
+    }, {
+        "cityName": "厦门",
+        "value": 3,
+        "schools": [{
+            "schoolName": "福州大学厦门工艺美术学院"
+        }, {
+            "schoolName": "集美大学"
+        }, {
+            "schoolName": "厦门大学"
+        }]
+    }, {
+        "cityName": "泉州",
+        "value": 2,
+        "schools": [{
+            "schoolName": "华侨大学"
+        }, {
+            "schoolName": "仰恩大学"
+        }]
+    }]
+}, {
+    "name": "上海",
+    "cityList": [{
+        "cityName": "上海",
+        "value": 17,
+        "schools": [{
+            "schoolName": "复旦大学"
+        }, {
+            "schoolName": "华东理工大学"
+        }, {
+            "schoolName": "华东师范大学"
+        }, {
+            "schoolName": "华东政法大学"
+        }, {
+            "schoolName": "上海财经大学"
+        }, {
+            "schoolName": "上海大学"
+        }, {
+            "schoolName": "上海电力大学"
+        }, {
+            "schoolName": "上海对外经贸大学"
+        }, {
+            "schoolName": "上海工程技术大学"
+        }, {
+            "schoolName": "上海立信会计金融学院"
+        }, {
+            "schoolName": "上海领科双语学校"
+        }, {
+            "schoolName": "上海商学院"
+        }, {
+            "schoolName": "上海师范大学"
+        }, {
+            "schoolName": "上海外国语大学"
+        }, {
+            "schoolName": "上海应用技术大学"
+        }, {
+            "schoolName": "上海政法学院 "
+        }, {
+            "schoolName": "同济大学"
+        }]
+    }]
+}, {
     "name": "广西",
     "cityList": [{
         "cityName": "南宁",
-        "value": 1,
+        "value": 2,
         "schools": [{
             "schoolName": "广西大学"
+        }, {
+            "schoolName": "广西医科大学"
         }]
     }, {
         "cityName": "桂林",
@@ -24,124 +763,180 @@ var mydata = [{
         }]
     }]
 }, {
-    "name": "江苏",
+    "name": "贵州",
     "cityList": [{
-        "cityName": "南京",
-        "value": 14,
-        "schools": [{
-            "schoolName": "南京特殊教育师范学院"
-        }, {
-            "schoolName": "南京农业大学"
-        }, {
-            "schoolName": "江苏第二师范学院"
-        }, {
-            "schoolName": "中国药科大学"
-        }, {
-            "schoolName": "金陵科技学院"
-        }, {
-            "schoolName": "南京外国语学校"
-        }, {
-            "schoolName": "南京信息工程大学"
-        }, {
-            "schoolName": "南京艺术学院"
-        }, {
-            "schoolName": "南京工程学院"
-        }, {
-            "schoolName": "河海大学 "
-        }, {
-            "schoolName": "南京理工大学"
-        }, {
-            "schoolName": "南京医科大学"
-        }, {
-            "schoolName": "南京医科大学康达学院"
-        }, {
-            "schoolName": "中国传媒大学南广学院"
-        }]
-    }, {
-        "cityName": "苏州",
-        "value": 2,
-        "schools": [{
-            "schoolName": "苏州大学"
-        }, {
-            "schoolName": "苏州科技大学"
-        }]
-    }, {
-        "cityName": "徐州",
-        "value": 2,
-        "schools": [{
-            "schoolName": "江苏师范大学"
-        }, {
-            "schoolName": "徐州工程学院"
-        }]
-    }, {
-        "cityName": "常州",
+        "cityName": "贵阳",
         "value": 1,
         "schools": [{
-            "schoolName": "常州大学"
-        }]
-    }, {
-        "cityName": "无锡",
-        "value": 1,
-        "schools": [{
-            "schoolName": "江南大学"
-        }]
-    }, {
-        "cityName": "宜兴",
-        "value": 1,
-        "schools": [{
-            "schoolName": "无锡工艺职业技术学院"
+            "schoolName": "贵州大学"
         }]
     }]
 }, {
-    "name": "安徽",
+    "name": "海南",
     "cityList": [{
-        "cityName": "黄山",
+        "cityName": "海口",
         "value": 1,
         "schools": [{
-            "schoolName": "黄山学院"
+            "schoolName": "海南大学"
         }]
     }, {
-        "cityName": "芜湖",
-        "value": 1,
+        "cityName": "三亚",
+        "value": 3,
         "schools": [{
-            "schoolName": "安徽师范大学"
+            "schoolName": "海南热带海洋学院"
+        }, {
+            "schoolName": "海南省三亚市第一中学"
+        }, {
+            "schoolName": "三亚学院"
+        }]
+    }]
+}, {
+    "name": "浙江",
+    "cityList": [{
+        "cityName": "杭州",
+        "value": 11,
+        "schools": [{
+            "schoolName": "杭州师范大学"
+        }, {
+            "schoolName": "浙大城市学院"
+        }, {
+            "schoolName": "浙江传媒学院"
+        }, {
+            "schoolName": "浙江工商大学"
+        }, {
+            "schoolName": "浙江理工大学"
+        }, {
+            "schoolName": "浙江旅游职业学院"
+        }, {
+            "schoolName": "浙江旅游职业学院千岛湖校区"
+        }, {
+            "schoolName": "浙江农林大学"
+        }, {
+            "schoolName": "浙江音乐学院"
+        }, {
+            "schoolName": "中国计量大学"
+        }, {
+            "schoolName": "中国美术学院"
         }]
     }, {
-        "cityName": "合肥",
+        "cityName": "湖州",
         "value": 1,
         "schools": [{
-            "schoolName": "合肥工业大学"
+            "schoolName": "湖州师范学院"
         }]
     }, {
-        "cityName": "六安",
+        "cityName": "温州",
+        "value": 2,
+        "schools": [{
+            "schoolName": "温州肯恩大学"
+        }, {
+            "schoolName": "温州医科大学"
+        }]
+    }, {
+        "cityName": "嘉兴",
         "value": 1,
         "schools": [{
-            "schoolName": "皖西学院官微"
+            "schoolName": "秀州中学"
+        }]
+    }, {
+        "cityName": "海宁",
+        "value": 1,
+        "schools": [{
+            "schoolName": "浙江财经大学东方学院"
+        }]
+    }, {
+        "cityName": "绍兴",
+        "value": 2,
+        "schools": [{
+            "schoolName": "浙江理工大学科技与艺术学院"
+        }, {
+            "schoolName": "浙江越秀外国语学院"
+        }]
+    }]
+}, {
+    "name": "湖南",
+    "cityList": [{
+        "cityName": "衡阳",
+        "value": 2,
+        "schools": [{
+            "schoolName": "衡阳师范学院"
+        }, {
+            "schoolName": "南华大学"
+        }]
+    }, {
+        "cityName": "长沙",
+        "value": 8,
+        "schools": [{
+            "schoolName": "湖南财政经济学院"
+        }, {
+            "schoolName": "湖南大学"
+        }, {
+            "schoolName": "湖南工商大学"
+        }, {
+            "schoolName": "湖南农业大学"
+        }, {
+            "schoolName": "湖南师范大学"
+        }, {
+            "schoolName": "长沙理工大学"
+        }, {
+            "schoolName": "中南大学"
+        }, {
+            "schoolName": "中南林业科技大学"
+        }]
+    }, {
+        "cityName": "株洲",
+        "value": 1,
+        "schools": [{
+            "schoolName": "湖南工业大学"
+        }]
+    }, {
+        "cityName": "岳阳",
+        "value": 1,
+        "schools": [{
+            "schoolName": "湖南理工学院南湖学院"
+        }]
+    }, {
+        "cityName": "怀化",
+        "value": 1,
+        "schools": [{
+            "schoolName": "怀化学院"
         }]
     }]
 }, {
     "name": "湖北",
     "cityList": [{
         "cityName": "武汉",
-        "value": 9,
+        "value": 15,
         "schools": [{
-            "schoolName": "中南财经政法大学"
+            "schoolName": "湖北大学"
         }, {
-            "schoolName": "中国地质大学武汉"
+            "schoolName": "湖北第二师范学院"
         }, {
             "schoolName": "湖北工业大学"
         }, {
-            "schoolName": "江汉大学"
+            "schoolName": "湖北经济学院"
         }, {
             "schoolName": "湖北美术学院"
         }, {
             "schoolName": "湖北中医药大学"
         }, {
-            "schoolName": "湖北经济学院"
+            "schoolName": "华中科技大学"
         }, {
             "schoolName": "华中农业大学"
         }, {
+            "schoolName": "江汉大学"
+        }, {
+            "schoolName": "武汉传媒学院"
+        }, {
             "schoolName": "武汉大学"
+        }, {
+            "schoolName": "武汉理工大学"
+        }, {
+            "schoolName": "中国地质大学武汉"
+        }, {
+            "schoolName": "中南财经政法大学"
+        }, {
+            "schoolName": "中南民族大学"
         }]
     }, {
         "cityName": "宜昌",
@@ -157,382 +952,166 @@ var mydata = [{
         }]
     }]
 }, {
-    "name": "广东",
+    "name": "吉林",
     "cityList": [{
-        "cityName": "佛山",
+        "cityName": "长春",
+        "value": 2,
+        "schools": [{
+            "schoolName": "吉林大学"
+        }, {
+            "schoolName": "长春财经学院"
+        }]
+    }, {
+        "cityName": "四平",
         "value": 1,
         "schools": [{
-            "schoolName": "华南师范大学"
-        }]
-    }, {
-        "cityName": "广州",
-        "value": 6,
-        "schools": [{
-            "schoolName": "广东外语外贸大学"
-        }, {
-            "schoolName": "中山大学"
-        }, {
-            "schoolName": "广东第二师范学院"
-        }, {
-            "schoolName": "广州大学"
-        }, {
-            "schoolName": "暨南大学"
-        }, {
-            "schoolName": "广东石油化工学院"
-        }]
-    }]
-}, {
-    "name": "河北",
-    "cityList": [{
-        "cityName": "石家庄",
-        "value": 5,
-        "schools": [{
-            "schoolName": "河北师范大学"
-        }, {
-            "schoolName": "河北地质大学"
-        }, {
-            "schoolName": "河北经贸大学"
-        }, {
-            "schoolName": "河北科技大学"
-        }, {
-            "schoolName": "河北中医学院"
-        }]
-    }, {
-        "cityName": "保定",
-        "value": 3,
-        "schools": [{
-            "schoolName": "河北大学"
-        }, {
-            "schoolName": "保定学院音乐"
-        }, {
-            "schoolName": "河北保定师范附属学校"
-        }]
-    }]
-}, {
-    "name": "浙江",
-    "cityList": [{
-        "cityName": "杭州",
-        "value": 9,
-        "schools": [{
-            "schoolName": "中国计量大学"
-        }, {
-            "schoolName": "浙江音乐学院"
-        }, {
-            "schoolName": "中国美术学院"
-        }, {
-            "schoolName": "浙江理工大学"
-        }, {
-            "schoolName": "浙江农林大学"
-        }, {
-            "schoolName": "浙大城市学院"
-        }, {
-            "schoolName": "浙江旅游职业学院千岛湖校区"
-        }, {
-            "schoolName": "浙江旅游职业学院"
-        }, {
-            "schoolName": "浙江传媒学院"
-        }]
-    }, {
-        "cityName": "绍兴",
-        "value": 1,
-        "schools": [{
-            "schoolName": "浙江越秀外国语学院"
-        }]
-    }, {
-        "cityName": "海宁",
-        "value": 1,
-        "schools": [{
-            "schoolName": "浙江财经大学东方学院"
-        }]
-    }, {
-        "cityName": "湖州",
-        "value": 1,
-        "schools": [{
-            "schoolName": "湖州师范学院"
-        }]
-    }]
-}, {
-    "name": "天津",
-    "cityList": [{
-        "cityName": "天津",
-        "value": 9,
-        "schools": [{
-            "schoolName": "天津大学"
-        }, {
-            "schoolName": "南开大学"
-        }, {
-            "schoolName": "天津商业大学"
-        }, {
-            "schoolName": "天津财经大学珠江学院"
-        }, {
-            "schoolName": "天津外国语大学"
-        }, {
-            "schoolName": "天津工业大学"
-        }, {
-            "schoolName": "天津师范大学"
-        }, {
-            "schoolName": "天津音乐学院 "
-        }, {
-            "schoolName": "天津中医药大学"
-        }]
-    }]
-}, {
-    "name": "四川",
-    "cityList": [{
-        "cityName": "南充",
-        "value": 1,
-        "schools": [{
-            "schoolName": "西华师范大学"
-        }]
-    }, {
-        "cityName": "成都",
-        "value": 6,
-        "schools": [{
-            "schoolName": "成都医学院"
-        }, {
-            "schoolName": "四川师范大学"
-        }, {
-            "schoolName": "西南交通大学"
-        }, {
-            "schoolName": "成都信息工程大学"
-        }, {
-            "schoolName": "四川美术学院"
-        }, {
-            "schoolName": "成都西南民族大学"
-        }]
-    }, {
-        "cityName": "泸州",
-        "value": 1,
-        "schools": [{
-            "schoolName": "西南医科大学"
-        }]
-    }, {
-        "cityName": "雅安",
-        "value": 1,
-        "schools": [{
-            "schoolName": "四川农业大学"
-        }]
-    }, {
-        "cityName": "阿坝",
-        "value": 1,
-        "schools": [{
-            "schoolName": "阿坝师范学院"
-        }]
-    }]
-}, {
-    "name": "河南",
-    "cityList": [{
-        "cityName": "开封",
-        "value": 1,
-        "schools": [{
-            "schoolName": "河南大学"
-        }]
-    }, {
-        "cityName": "洛阳",
-        "value": 1,
-        "schools": [{
-            "schoolName": "洛阳师范学院"
-        }]
-    }, {
-        "cityName": "郑州",
-        "value": 4,
-        "schools": [{
-            "schoolName": "郑州大学"
-        }, {
-            "schoolName": "郑州师范学院"
-        }, {
-            "schoolName": "河南中医药大学"
-        }, {
-            "schoolName": "河南财经政法大学"
-        }]
-    }, {
-        "cityName": "新乡",
-        "value": 3,
-        "schools": [{
-            "schoolName": "河南工学院"
-        }, {
-            "schoolName": "新乡医学院"
-        }, {
-            "schoolName": "河南师范大学"
-        }]
-    }]
-}, {
-    "name": "北京",
-    "cityList": [{
-        "cityName": "北京",
-        "value": 19,
-        "schools": [{
-            "schoolName": "中国劳动关系学院"
-        }, {
-            "schoolName": "北京航空航天大学"
-        }, {
-            "schoolName": "北京理工大学"
-        }, {
-            "schoolName": "北京体育大学"
-        }, {
-            "schoolName": "首都师范大学"
-        }, {
-            "schoolName": "对外经济贸易大学"
-        }, {
-            "schoolName": "北京交通大学"
-        }, {
-            "schoolName": "北京工业大学"
-        }, {
-            "schoolName": "中国矿业大学"
-        }, {
-            "schoolName": "北京化工大学"
-        }, {
-            "schoolName": "北京师范大学"
-        }, {
-            "schoolName": "北京语言大学 "
-        }, {
-            "schoolName": "北京中国地质大学"
-        }, {
-            "schoolName": "对外贸易经济大学"
-        }, {
-            "schoolName": "首都医科大学"
-        }, {
-            "schoolName": "中国人民大学"
-        }, {
-            "schoolName": "中国社会科学院大学"
-        }, {
-            "schoolName": "中国政法大学 "
-        }, {
-            "schoolName": "中央民族大学"
-        }]
-    }]
-}, {
-    "name": "上海",
-    "cityList": [{
-        "cityName": "上海",
-        "value": 15,
-        "schools": [{
-            "schoolName": "复旦大学"
-        }, {
-            "schoolName": "上海应用技术大学"
-        }, {
-            "schoolName": "上海师范大学"
-        }, {
-            "schoolName": "上海财经大学"
-        }, {
-            "schoolName": "上海外国语大学"
-        }, {
-            "schoolName": "同济大学"
-        }, {
-            "schoolName": "华东理工大学"
-        }, {
-            "schoolName": "华东师范大学 "
-        }, {
-            "schoolName": "华东政法大学"
-        }, {
-            "schoolName": "上海电力大学"
-        }, {
-            "schoolName": "上海对外经贸大学"
-        }, {
-            "schoolName": "上海工程技术大学"
-        }, {
-            "schoolName": "上海立信会计金融学院"
-        }, {
-            "schoolName": "上海商学院"
-        }, {
-            "schoolName": "上海政法学院 "
-        }]
-    }]
-}, {
-    "name": "湖南",
-    "cityList": [{
-        "cityName": "长沙",
-        "value": 6,
-        "schools": [{
-            "schoolName": "中南大学"
-        }, {
-            "schoolName": "湖南工商大学"
-        }, {
-            "schoolName": "湖南师范大学"
-        }, {
-            "schoolName": "湖南农业大学"
-        }, {
-            "schoolName": "湖南大学"
-        }, {
-            "schoolName": "中南林业科技大学"
-        }]
-    }, {
-        "cityName": "怀化",
-        "value": 1,
-        "schools": [{
-            "schoolName": "怀化学院"
-        }]
-    }, {
-        "cityName": "衡阳",
-        "value": 1,
-        "schools": [{
-            "schoolName": "衡阳师范学院"
+            "schoolName": "吉林师范大学"
         }]
     }]
 }, {
     "name": "江西",
     "cityList": [{
         "cityName": "南昌",
-        "value": 2,
+        "value": 3,
         "schools": [{
+            "schoolName": "江西财经大学"
+        }, {
             "schoolName": "江西师范大学"
         }, {
             "schoolName": "南昌航空大学"
         }]
     }]
 }, {
-    "name": "山西",
+    "name": "新疆",
     "cityList": [{
-        "cityName": "晋中",
+        "cityName": "喀什",
+        "value": 1,
+        "schools": [{
+            "schoolName": "喀什大学"
+        }]
+    }, {
+        "cityName": "石河子",
+        "value": 1,
+        "schools": [{
+            "schoolName": "石河子大学"
+        }]
+    }, {
+        "cityName": "乌鲁木齐",
         "value": 2,
         "schools": [{
-            "schoolName": "山西传媒学院"
+            "schoolName": "乌鲁木齐市高级中学"
         }, {
-            "schoolName": "太原师范学院"
+            "schoolName": "新疆大学"
         }]
     }]
 }, {
-    "name": "重庆",
+    "name": "甘肃",
     "cityList": [{
-        "cityName": "重庆",
-        "value": 9,
+        "cityName": "兰州",
+        "value": 4,
         "schools": [{
-            "schoolName": "四川外国语大学"
+            "schoolName": "兰州财经大学"
         }, {
-            "schoolName": "四川外国语大学重庆南方翻译学院"
+            "schoolName": "兰州大学"
         }, {
-            "schoolName": "西南大学"
+            "schoolName": "兰州交通大学"
         }, {
-            "schoolName": "西南财经大学"
+            "schoolName": "兰州理工大学"
+        }]
+    }]
+}, {
+    "name": "天津",
+    "cityList": [{
+        "cityName": "天津",
+        "value": 14,
+        "schools": [{
+            "schoolName": "南开大学"
         }, {
-            "schoolName": "西南科技大学"
+            "schoolName": "天津财经大学珠江学院"
         }, {
-            "schoolName": "西南石油大学"
+            "schoolName": "天津大学"
         }, {
-            "schoolName": "西南政法大学"
+            "schoolName": "天津工业大学"
         }, {
-            "schoolName": "重庆交通大学"
+            "schoolName": "天津科技大学"
         }, {
-            "schoolName": "重庆师范大学-涉外商贸学院"
+            "schoolName": "天津理工大学"
+        }, {
+            "schoolName": "天津商业大学"
+        }, {
+            "schoolName": "天津师范大学"
+        }, {
+            "schoolName": "天津市大学软件学院"
+        }, {
+            "schoolName": "天津外国语大学"
+        }, {
+            "schoolName": "天津外国语大学滨海外事学院"
+        }, {
+            "schoolName": "天津音乐学院 "
+        }, {
+            "schoolName": "天津职业技术师范大学"
+        }, {
+            "schoolName": "天津中医药大学"
+        }]
+    }]
+}, {
+    "name": "山西",
+    "cityList": [{
+        "cityName": "晋中",
+        "value": 3,
+        "schools": [{
+            "schoolName": "山西传媒学院"
+        }, {
+            "schoolName": "山西农业大学信息学院"
+        }, {
+            "schoolName": "太原师范学院"
+        }]
+    }, {
+        "cityName": "太原",
+        "value": 1,
+        "schools": [{
+            "schoolName": "山西工商学院"
         }]
     }]
 }, {
     "name": "陕西",
     "cityList": [{
         "cityName": "西安",
-        "value": 6,
+        "value": 14,
         "schools": [{
+            "schoolName": "陕西国防工业职业技术学院"
+        }, {
+            "schoolName": "陕西师范大学"
+        }, {
+            "schoolName": "西安财经大学"
+        }, {
+            "schoolName": "西安电子科技大学"
+        }, {
+            "schoolName": "西安翻译学院"
+        }, {
             "schoolName": "西安工业大学"
         }, {
-            "schoolName": "西安外国语大学"
+            "schoolName": "西安建筑科技大学"
+        }, {
+            "schoolName": "西安交通大学"
         }, {
             "schoolName": "西安石油大学"
         }, {
+            "schoolName": "西安外国语大学"
+        }, {
+            "schoolName": "西安文理学院"
+        }, {
+            "schoolName": "西北大学"
+        }, {
+            "schoolName": "西北工业大学"
+        }, {
             "schoolName": "西北政法大学"
-        }, {
-            "schoolName": "陕西国防工业职业技术学院"
-        }, {
-            "schoolName": "西安电子科技大学"
+        }]
+    }, {
+        "cityName": "汉中",
+        "value": 1,
+        "schools": [{
+            "schoolName": "陕西理工大学"
         }]
     }, {
         "cityName": "咸阳",
@@ -541,233 +1120,75 @@ var mydata = [{
             "schoolName": "咸阳师范学院"
         }]
     }, {
-        "cityName": "汉中",
+        "cityName": "榆林",
         "value": 1,
         "schools": [{
-            "schoolName": "陕西理工大学"
+            "schoolName": "榆林学院"
         }]
     }]
 }, {
-    "name": "黑龙江",
+    "name": "重庆",
     "cityList": [{
-        "cityName": "哈尔滨",
-        "value": 2,
+        "cityName": "重庆",
+        "value": 12,
         "schools": [{
-            "schoolName": "黑龙江大学"
+            "schoolName": "四川外国语大学"
         }, {
-            "schoolName": "哈尔滨商业大学"
+            "schoolName": "四川外国语大学重庆南方翻译学院"
+        }, {
+            "schoolName": "西南财经大学"
+        }, {
+            "schoolName": "西南大学"
+        }, {
+            "schoolName": "西南科技大学"
+        }, {
+            "schoolName": "西南石油大学"
+        }, {
+            "schoolName": "西南政法大学"
+        }, {
+            "schoolName": "重庆大学"
+        }, {
+            "schoolName": "重庆交通大学"
+        }, {
+            "schoolName": "重庆师范大学涉外商贸学院"
+        }, {
+            "schoolName": "重庆文理学院"
+        }, {
+            "schoolName": "重庆邮电大学移通学院"
         }]
     }]
 }, {
-    "name": "云南",
+    "name": "宜兴",
     "cityList": [{
-        "cityName": "昆明",
-        "value": 4,
+        "cityName": "宜兴",
+        "value": 1,
         "schools": [{
-            "schoolName": "云南中医药大学"
-        }, {
-            "schoolName": "云南大学"
-        }, {
-            "schoolName": "云南农业大学"
-        }, {
-            "schoolName": "云南民族大学"
+            "schoolName": "无锡工艺职业技术学院"
         }]
     }]
 }, {
-    "name": "海南",
+    "name": "宁夏",
     "cityList": [{
-        "cityName": "三亚",
+        "cityName": "银川",
         "value": 1,
         "schools": [{
-            "schoolName": "海南省三亚市第一中学"
-        }]
-    }]
-}, {
-    "name": "辽宁",
-    "cityList": [{
-        "cityName": "沈阳",
-        "value": 7,
-        "schools": [{
-            "schoolName": "沈阳化工大学"
-        }, {
-            "schoolName": "沈阳师范大学"
-        }, {
-            "schoolName": "沈阳音乐学院"
-        }, {
-            "schoolName": "东北大学"
-        }, {
-            "schoolName": "辽宁大学"
-        }, {
-            "schoolName": "沈阳化工大学 "
-        }, {
-            "schoolName": "沈阳农业大学"
-        }]
-    }, {
-        "cityName": "大连",
-        "value": 1,
-        "schools": [{
-            "schoolName": "大连民族大学"
-        }]
-    }]
-}, {
-    "name": "吉林",
-    "cityList": [{
-        "cityName": "长春",
-        "value": 1,
-        "schools": [{
-            "schoolName": "吉林大学"
-        }]
-    }]
-}, {
-    "name": "甘肃",
-    "cityList": [{
-        "cityName": "兰州",
-        "value": 3,
-        "schools": [{
-            "schoolName": "兰州财经大学"
-        }, {
-            "schoolName": "兰州交通大学"
-        }, {
-            "schoolName": "兰州理工大学"
-        }]
-    }]
-}, {
-    "name": "山东",
-    "cityList": [{
-        "cityName": "烟台",
-        "value": 1,
-        "schools": [{
-            "schoolName": "鲁东大学"
-        }]
-    }, {
-        "cityName": "济南",
-        "value": 6,
-        "schools": [{
-            "schoolName": "济南大学"
-        }, {
-            "schoolName": "山东政法学院"
-        }, {
-            "schoolName": "山东艺术学院"
-        }, {
-            "schoolName": "山东财经大学"
-        }, {
-            "schoolName": "山东大学"
-        }, {
-            "schoolName": "山东女子学院 "
-        }]
-    }, {
-        "cityName": "泰安",
-        "value": 2,
-        "schools": [{
-            "schoolName": "山东农业大学"
-        }, {
-            "schoolName": "山东第一医科大学"
-        }]
-    }, {
-        "cityName": "青岛",
-        "value": 3,
-        "schools": [{
-            "schoolName": "青岛大学"
-        }, {
-            "schoolName": "山东科技大学 "
-        }, {
-            "schoolName": "中国海洋大学"
-        }]
-    }, {
-        "cityName": "曲阜",
-        "value": 1,
-        "schools": [{
-            "schoolName": "曲阜师范大学"
-        }]
-    }]
-}, {
-    "name": "福建",
-    "cityList": [{
-        "cityName": "泉州",
-        "value": 2,
-        "schools": [{
-            "schoolName": "仰恩大学"
-        }, {
-            "schoolName": "华侨大学"
-        }]
-    }, {
-        "cityName": "厦门",
-        "value": 2,
-        "schools": [{
-            "schoolName": "集美大学"
-        }, {
-            "schoolName": "厦门大学"
-        }]
-    }, {
-        "cityName": "福州",
-        "value": 1,
-        "schools": [{
-            "schoolName": "福建江夏学院"
-        }]
-    }, {
-        "cityName": "福建",
-        "value": 3,
-        "schools": [{
-            "schoolName": "福建农林大学"
-        }, {
-            "schoolName": "福建商学院"
-        }, {
-            "schoolName": "福建师范大学"
-        }]
-    }]
-}, {
-    "name": "内蒙古",
-    "cityList": [{
-        "cityName": "通辽",
-        "value": 1,
-        "schools": [{
-            "schoolName": "内蒙古民族大学"
-        }]
-    }, {
-        "cityName": "呼和浩特",
-        "value": 2,
-        "schools": [{
-            "schoolName": "内蒙古财经大学"
-        }, {
-            "schoolName": "内蒙古医科大学"
-        }]
-    }]
-}, {
-    "name": "新疆",
-    "cityList": [{
-        "cityName": "乌鲁木齐",
-        "value": 1,
-        "schools": [{
-            "schoolName": "新疆大学"
-        }]
-    }, {
-        "cityName": "喀什",
-        "value": 1,
-        "schools": [{
-            "schoolName": "喀什大学"
-        }]
-    }]
-}, {
-    "name": "澳门",
-    "cityList": [{
-        "cityName": "澳门",
-        "value": 1,
-        "schools": [{
-            "schoolName": "澳门城市大学"
-        }]
-    }]
-}, {
-    "name": "贵州",
-    "cityList": [{
-        "cityName": "贵阳",
-        "value": 1,
-        "schools": [{
-            "schoolName": "贵州大学"
+            "schoolName": "银川六中"
         }]
     }]
 }];
 
 var geoCoordMap = {
+    '乐山': [103.77139, 29.558694],
+    '甘孜': [101.962221, 30.054528],
+    '蚌埠': [117.393214, 32.921281],
+    '宿州': [116.971118, 33.651856],
+    '商丘': [115.661299, 34.419487],
+    '乌兰浩特': [122.070304, 46.076854],
+    '大理': [100.256905, 25.595233],
+    '鸡西': [130.97562, 45.301483],
+    '四平': [124.355908, 43.172205],
+    '石河子': [86.068493, 44.27543],
+    '榆林': [109.732994, 38.291562],
     '梧州': [111.284943, 23.48142],
     '黄山': [118.345437, 29.72189],
     '六安': [116.525837, 31.740224],
@@ -1004,7 +1425,7 @@ window.addEventListener('load', function () {
         title: {
             show: true,
             text: '月经安心行动',
-            subtext: '卫生巾互助盒高校地图展示',
+            subtext: '卫生巾互助盒学校地图展示',
             x: 'center',
             y: 'top',
             textStyle: { //主标题文本样式{"fontSize": 18,"fontWeight": "bolder","color": "#333"}
@@ -1027,9 +1448,9 @@ window.addEventListener('load', function () {
             y: 'center',
             splitList: [{
                     start: 21,
-                    end: 25
+                    end: 30
                 }, {
-                    start: 15,
+                    start: 16,
                     end: 20
                 }, {
                     start: 11,
@@ -1052,11 +1473,16 @@ window.addEventListener('load', function () {
                 if (value) {
                     var formatStr = value.name + ':<br/>';
                     var schools = value.schools;
-                    schools.forEach(function (school) {
-                        formatStr += school.schoolName + '<br/>';
+                    schools.forEach(function (school, index) {
+                        if (index % 2 == 0) {
+                            formatStr += school.schoolName + ' | ';
+                        } else {
+                            formatStr += school.schoolName + '<br/>';
+                        }
                     });
-                    formatStr += '<br/>';
-                    formatStr = formatStr.substring(0, formatStr.length - 5);
+                    if (schools.length % 2 === 1) {
+                        formatStr = formatStr.substring(0, formatStr.length - 3);
+                    }
 
                     return formatStr;
                 }
