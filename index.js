@@ -1671,7 +1671,11 @@ var geoCoordMap = {
     '合肥': [117.27, 31.86],
     '武汉': [114.31, 30.52],
     '大庆': [125.03, 46.58],
+<<<<<<< HEAD
     '哈密': [93.52, 42.82]
+=======
+    '哈密': [93.52,42.82]
+>>>>>>> updated-ui
 };
 
 var convertData = function (data) {
@@ -1694,6 +1698,11 @@ var convertData = function (data) {
     }
     return res;
 };
+
+var calculateSymbolSize = function (val) {
+    // 开方减小数值差异
+    return Math.pow(val[2], 0.25) * 15;
+}
 
 window.addEventListener('load', function () {
     var chart = echarts.init(document.getElementById('main'));
@@ -1777,7 +1786,7 @@ window.addEventListener('load', function () {
             },
             label: {
                 normal: {
-                    show: false //省份名称  
+                    show: false //省份名称
                 },
                 emphasis: {
                     show: false
@@ -1797,35 +1806,63 @@ window.addEventListener('load', function () {
                 }
             }
         },
-        series: [{
-            type: 'effectScatter',
-            coordinateSystem: 'geo',
-            data: convertData(mydata),
-            rippleEffect: {
-                //涟漪特效
-                period: 8, //动画时间，值越小速度越快
-                brushType: "stroke", //波纹绘制方式 stroke, fill
-                scale: 5 //波纹圆环最大限制，值越大波纹越大
+        series: [
+            {
+                type: 'scatter',
+                coordinateSystem: 'geo',
+                data: convertData(mydata),
+                symbolSize: calculateSymbolSize,
+                encode: {
+                    value: 2
+                },
+                label: {
+                    formatter: '{b}',
+                    position: 'left',
+                    show: false
+                },
+                itemStyle: {
+                    normal: {
+                        color: '#fff'
+                    }
+                },
+                emphasis: {
+                    label: {
+                        show: true
+                    }
+                }
             },
-            hoverAnimation: true,
-            symbolSize: 8,
-            label: {
-                normal: {
+            {
+                name: 'Top',
+                type: 'effectScatter',
+                coordinateSystem: 'geo',
+                data: convertData(mydata).filter(
+                        function(a) { return a.value[2] >= 11; }
+                    ).sort(
+                        function (a, b) { return a.value[2] - b.value[2]; }
+                    ),
+                symbolSize: calculateSymbolSize,
+                encode: {
+                    value: 2
+                },
+                showEffectOn: 'render',
+                rippleEffect: {
+                    period: 8, //动画时间，值越小速度越快
+                    brushType: "stroke", //波纹绘制方式 stroke, fill
+                },
+                hoverAnimation: true,
+                label: {
                     formatter: '{b}',
                     position: 'left',
                     show: true
                 },
-                emphasis: {
-                    show: false
+                itemStyle: {
+                    normal: {
+                        color: '#fff'
+                    }
                 }
-            },
-            itemStyle: {
-                normal: {
-                    color: '#fff'
-                }
+                // zlevel: 1
             }
-
-        }]
+        ]
     });
 
     chart.on('georoam', function (params) {
