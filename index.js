@@ -1697,7 +1697,7 @@ var convertData = function (data) {
 
 var calculateSymbolSize = function (val) {
     // 开方减小数值差异
-    return Math.pow(val[2], 0.3) * 10;
+    return Math.pow(val[2], 0.3) * 12;
 }
 
 window.addEventListener('load', function () {
