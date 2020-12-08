@@ -1,6 +1,6 @@
 var _main = document.getElementById('main');
 _main.style.width = document.body.offsetWidth + 'px';
-_main.style.height = document.body.offsetHeight + 'px'
+_main.style.height = document.body.offsetHeight + 'px';
 
 var mydata = [{
     "name": "四川",
@@ -12,7 +12,7 @@ var mydata = [{
         }]
     }, {
         "cityName": "成都",
-        "value": 16,
+        "value": 18,
         "schools": [{
             "schoolName": "成都理工大学"
         }, {
@@ -45,6 +45,10 @@ var mydata = [{
             "schoolName": "西南交通大学希望学院"
         }, {
             "schoolName": "西南民族大学"
+        }, {
+            "schoolName": "成都外国语学校"
+        }, {
+            "schoolName": "四川电影电视学院"
         }]
     }, {
         "cityName": "乐山",
@@ -119,7 +123,7 @@ var mydata = [{
         }]
     }, {
         "cityName": "广州",
-        "value": 15,
+        "value": 18,
         "schools": [{
             "schoolName": "广东财经大学华商学院"
         }, {
@@ -150,6 +154,12 @@ var mydata = [{
             "schoolName": "星海音乐学院"
         }, {
             "schoolName": "中山大学"
+        }, {
+            "schoolName": "广州航海学院"
+        }, {
+            "schoolName": "广州科技职业技术大学"
+        }, {
+            "schoolName": "广东工业大学华立学院"
         }]
     }, {
         "cityName": "湛江",
@@ -169,25 +179,45 @@ var mydata = [{
         }]
     }, {
         "cityName": "佛山",
-        "value": 1,
+        "value": 2,
         "schools": [{
             "schoolName": "华南师范大学"
+        }, {
+            "schoolName": "广东环境保护工程职业学院"
         }]
     }, {
         "cityName": "深圳",
-        "value": 3,
+        "value": 5,
         "schools": [{
             "schoolName": "深圳大学"
         }, {
             "schoolName": "深圳市职业技术学院"
         }, {
             "schoolName": "深圳职业技术学院"
+        }, {
+            "schoolName": "深圳美中学校"
+        }, {
+            "schoolName": "深圳中学"
         }]
     }, {
         "cityName": "江门",
         "value": 1,
         "schools": [{
             "schoolName": "五邑大学"
+        }]
+    }, {
+        "cityName": "肇庆",
+        "value": 1,
+        "schools": [{
+            "schoolName": "封开县江口中学"
+        }]
+    }, {
+        "cityName": "汕头",
+        "value": 2,
+        "schools": [{
+            "schoolName": "汕头大学"
+        }, {
+            "schoolName": "澄海实验高级中学"
         }]
     }]
 }, {
@@ -200,17 +230,21 @@ var mydata = [{
         }]
     }, {
         "cityName": "合肥",
-        "value": 2,
+        "value": 3,
         "schools": [{
             "schoolName": "安徽新华学院"
         }, {
             "schoolName": "合肥工业大学"
+        }, {
+            "schoolName": "安徽农业大学"
         }]
     }, {
         "cityName": "蚌埠",
-        "value": 1,
+        "value": 2,
         "schools": [{
             "schoolName": "蚌埠学院"
+        }, {
+            "schoolName": "蚌埠医学院"
         }]
     }, {
         "cityName": "亳州",
@@ -236,6 +270,12 @@ var mydata = [{
         "schools": [{
             "schoolName": "宿州学院"
         }]
+    }, {
+        "cityName": "马鞍山",
+        "value": 1,
+        "schools": [{
+            "schoolName": "皖江工学院"
+        }]
     }]
 }, {
     "name": "河南",
@@ -247,7 +287,7 @@ var mydata = [{
         }]
     }, {
         "cityName": "郑州",
-        "value": 8,
+        "value": 9,
         "schools": [{
             "schoolName": "河南财经政法大学"
         }, {
@@ -264,6 +304,8 @@ var mydata = [{
             "schoolName": "中原工学院"
         }, {
             "schoolName": "中原文化艺术学院"
+        }, {
+            "schoolName": "郑州工商学院"
         }]
     }, {
         "cityName": "开封",
@@ -384,12 +426,18 @@ var mydata = [{
         "schools": [{
             "schoolName": "衡水市第二中学"
         }]
+    }, {
+        "cityName": "廊坊",
+        "value": 1,
+        "schools": [{
+            "schoolName": "燕京理工学院"
+        }]
     }]
 }, {
     "name": "北京",
     "cityList": [{
         "cityName": "北京",
-        "value": 34,
+        "value": 38,
         "schools": [{
             "schoolName": "北京第二外国语学院"
         }, {
@@ -458,6 +506,14 @@ var mydata = [{
             "schoolName": "中央美术学院"
         }, {
             "schoolName": "中央民族大学"
+        }, {
+            "schoolName": "华北电力大学经济与管理学院"
+        }, {
+            "schoolName": "北京服装学院"
+        }, {
+            "schoolName": "中国戏曲学院"
+        }, {
+            "schoolName": "中国音乐学院"
         }]
     }]
 }, {
@@ -498,11 +554,13 @@ var mydata = [{
         }]
     }, {
         "cityName": "烟台",
-        "value": 2,
+        "value": 3,
         "schools": [{
             "schoolName": "鲁东大学"
         }, {
             "schoolName": "烟台大学"
+        }, {
+            "schoolName": "山东工商学院"
         }]
     }, {
         "cityName": "青岛",
@@ -526,13 +584,21 @@ var mydata = [{
         }]
     }, {
         "cityName": "泰安",
-        "value": 3,
+        "value": 4,
         "schools": [{
             "schoolName": "山东第一医科大学"
         }, {
             "schoolName": "山东农业大学"
         }, {
             "schoolName": "泰山学院"
+        }, {
+            "schoolName": "山东财经大学东方学院"
+        }]
+    }, {
+        "cityName": "淄博",
+        "value": 1,
+        "schools": [{
+            "schoolName": "张店区实验中学"
         }]
     }]
 }, {
@@ -602,8 +668,6 @@ var mydata = [{
         "value": 1,
         "schools": [{
             "schoolName": "江南大学"
-        }, {
-            "schoolName": "无锡工艺职业技术学院"
         }]
     }, {
         "cityName": "连云港",
@@ -633,6 +697,24 @@ var mydata = [{
         "schools": [{
             "schoolName": "盐城工学院"
         }]
+    }, {
+        "cityName": "扬州",
+        "value": 1,
+        "schools": [{
+            "schoolName": "扬州大学"
+        }]
+    }, {
+        "cityName": "泰州",
+        "value": 1,
+        "schools": [{
+            "schoolName": "泰州学院"
+        }]
+    }, {
+        "cityName": "镇江",
+        "value": 1,
+        "schools": [{
+            "schoolName": "江苏大学"
+        }]
     }]
 }, {
     "name": "云南",
@@ -650,7 +732,7 @@ var mydata = [{
         }]
     }, {
         "cityName": "昆明",
-        "value": 4,
+        "value": 5,
         "schools": [{
             "schoolName": "云南大学"
         }, {
@@ -659,13 +741,15 @@ var mydata = [{
             "schoolName": "云南农业大学"
         }, {
             "schoolName": "云南中医药大学"
+        }, {
+            "schoolName": "昆明学院"
         }]
     }]
 }, {
     "name": "辽宁",
     "cityList": [{
         "cityName": "大连",
-        "value": 4,
+        "value": 5,
         "schools": [{
             "schoolName": "大连东软信息学院"
         }, {
@@ -674,10 +758,12 @@ var mydata = [{
             "schoolName": "大连外国语大学"
         }, {
             "schoolName": "东北财经大学"
+        }, {
+            "schoolName": "大连工业大学艺术与信息工程学院"
         }]
     }, {
         "cityName": "沈阳",
-        "value": 8,
+        "value": 9,
         "schools": [{
             "schoolName": "东北大学"
         }, {
@@ -694,13 +780,15 @@ var mydata = [{
             "schoolName": "沈阳师范大学"
         }, {
             "schoolName": "沈阳音乐学院"
+        }, {
+            "schoolName": "沈阳药科大学"
         }]
     }]
 }, {
     "name": "黑龙江",
     "cityList": [{
         "cityName": "哈尔滨",
-        "value": 5,
+        "value": 6,
         "schools": [{
             "schoolName": "东北林业大学"
         }, {
@@ -711,6 +799,8 @@ var mydata = [{
             "schoolName": "黑龙江大学"
         }, {
             "schoolName": "黑龙江科技大学"
+        }, {
+            "schoolName": "哈尔滨理工大学"
         }]
     }, {
         "cityName": "鸡西",
@@ -778,7 +868,7 @@ var mydata = [{
     "name": "上海",
     "cityList": [{
         "cityName": "上海",
-        "value": 19,
+        "value": 23,
         "schools": [{
             "schoolName": "复旦大学"
         }, {
@@ -817,6 +907,14 @@ var mydata = [{
             "schoolName": "上海政法学院 "
         }, {
             "schoolName": "同济大学"
+        }, {
+            "schoolName": "上海杉达学院"
+        }, {
+            "schoolName": "上海海洋大学"
+        }, {
+            "schoolName": "东华大学"
+        }, {
+            "schoolName": "上海纽约大学"
         }]
     }]
 }, {
@@ -831,9 +929,13 @@ var mydata = [{
         }]
     }, {
         "cityName": "桂林",
-        "value": 1,
+        "value": 3,
         "schools": [{
             "schoolName": "广西师范大学"
+        }, {
+            "schoolName": "桂林旅游学院"
+        }, {
+            "schoolName": "桂林电子科技大学"
         }]
     }, {
         "cityName": "梧州",
@@ -882,7 +984,7 @@ var mydata = [{
     "name": "浙江",
     "cityList": [{
         "cityName": "杭州",
-        "value": 11,
+        "value": 12,
         "schools": [{
             "schoolName": "杭州师范大学"
         }, {
@@ -905,6 +1007,8 @@ var mydata = [{
             "schoolName": "中国计量大学"
         }, {
             "schoolName": "中国美术学院"
+        }, {
+            "schoolName": "浙江财经大学"
         }]
     }, {
         "cityName": "湖州",
@@ -928,9 +1032,11 @@ var mydata = [{
         }]
     }, {
         "cityName": "宁波",
-        "value": 1,
+        "value": 2,
         "schools": [{
             "schoolName": "浙大宁波理工学院"
+        }, {
+            "schoolName": "宁波大学"
         }]
     }, {
         "cityName": "海宁",
@@ -959,7 +1065,7 @@ var mydata = [{
         }]
     }, {
         "cityName": "长沙",
-        "value": 8,
+        "value": 9,
         "schools": [{
             "schoolName": "湖南财政经济学院"
         }, {
@@ -976,6 +1082,8 @@ var mydata = [{
             "schoolName": "中南大学"
         }, {
             "schoolName": "中南林业科技大学"
+        }, {
+            "schoolName": "湖南信息学院"
         }]
     }, {
         "cityName": "株洲",
@@ -1001,12 +1109,20 @@ var mydata = [{
         "schools": [{
             "schoolName": "怀化学院"
         }]
+    }, {
+        "cityName": "湘潭",
+        "value": 2,
+        "schools": [{
+            "schoolName": "湘潭大学"
+        }, {
+            "schoolName": "湖南科技大学"
+        }]
     }]
 }, {
     "name": "湖北",
     "cityList": [{
         "cityName": "武汉",
-        "value": 17,
+        "value": 18,
         "schools": [{
             "schoolName": "湖北大学"
         }, {
@@ -1041,6 +1157,8 @@ var mydata = [{
             "schoolName": "中南财经政法大学"
         }, {
             "schoolName": "中南民族大学"
+        }, {
+            "schoolName": "武汉科技大学"
         }]
     }, {
         "cityName": "咸宁",
@@ -1119,6 +1237,12 @@ var mydata = [{
         }, {
             "schoolName": "新疆大学"
         }]
+    }, {
+        "cityName": "哈密",
+        "value": 1,
+        "schools": [{
+            "schoolName": "新疆哈密市伊州区第一中学"
+        }]
     }]
 }, {
     "name": "甘肃",
@@ -1190,16 +1314,24 @@ var mydata = [{
         }]
     }, {
         "cityName": "太原",
-        "value": 1,
+        "value": 2,
         "schools": [{
             "schoolName": "山西工商学院"
+        }, {
+            "schoolName": "山西大学商务学院"
+        }]
+    }, {
+        "cityName": "大同",
+        "value": 1,
+        "schools": [{
+            "schoolName": "山西大同大学"
         }]
     }]
 }, {
     "name": "陕西",
     "cityList": [{
         "cityName": "西安",
-        "value": 14,
+        "value": 15,
         "schools": [{
             "schoolName": "陕西国防工业职业技术学院"
         }, {
@@ -1228,6 +1360,8 @@ var mydata = [{
             "schoolName": "西北工业大学"
         }, {
             "schoolName": "西北政法大学"
+        }, {
+            "schoolName": "西北大学现代学院"
         }]
     }, {
         "cityName": "汉中",
@@ -1237,15 +1371,31 @@ var mydata = [{
         }]
     }, {
         "cityName": "咸阳",
-        "value": 1,
+        "value": 3,
         "schools": [{
             "schoolName": "咸阳师范学院"
+        }, {
+            "schoolName": "西北农林科技大学"
+        }, {
+            "schoolName": "西藏民族大学"
         }]
     }, {
         "cityName": "榆林",
         "value": 1,
         "schools": [{
             "schoolName": "榆林学院"
+        }]
+    }, {
+        "cityName": "宝鸡",
+        "value": 1,
+        "schools": [{
+            "schoolName": "宝鸡中学"
+        }]
+    }, {
+        "cityName": "延安",
+        "value": 1,
+        "schools": [{
+            "schoolName": "延安大学"
         }]
     }]
 }, {
@@ -1277,6 +1427,15 @@ var mydata = [{
             "schoolName": "重庆文理学院"
         }, {
             "schoolName": "重庆邮电大学移通学院"
+        }]
+    }]
+}, {
+    "name": "宜兴",
+    "cityList": [{
+        "cityName": "宜兴",
+        "value": 1,
+        "schools": [{
+            "schoolName": "无锡工艺职业技术学院"
         }]
     }]
 }, {
@@ -1509,10 +1668,23 @@ var geoCoordMap = {
     '长沙': [113, 28.21],
     '衢州': [118.88, 28.97],
     '廊坊': [116.7, 39.53],
-    '菏泽': [115.480656, 35.23375],
+    '菏泽': [115.48, 35.23],
     '合肥': [117.27, 31.86],
     '武汉': [114.31, 30.52],
-    '大庆': [125.03, 46.58]
+    '大庆': [125.03, 46.58],
+    '大同': [113.37,40.10],
+    '马鞍山': [118.51,31.68],
+    '汕头': [116.69,23.36],
+    '延安': [109.50,36.65],
+    '淄博': [118.06,36.82],
+    '肇庆': [112.47,23.05],
+    '泰州': [119.93,32.46],
+    '哈密': [93.52,42.82],
+    '宝鸡': [107.24,34.37],
+    '扬州': [119.42,32.40],
+    '湘潭': [112.95,27.83],
+    '廊坊': [116.69,39.54],
+    '镇江': [119.43,32.19]
 };
 
 var convertData = function (data) {
@@ -1670,7 +1842,7 @@ window.addEventListener('load', function () {
     });
 
     chart.on('georoam', function (params) {
-        console.log(params)
+        // console.log(params)
     })
     chart.hideLoading()
 });
