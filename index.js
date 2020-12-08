@@ -1671,11 +1671,7 @@ var geoCoordMap = {
     '合肥': [117.27, 31.86],
     '武汉': [114.31, 30.52],
     '大庆': [125.03, 46.58],
-<<<<<<< HEAD
     '哈密': [93.52, 42.82]
-=======
-    '哈密': [93.52,42.82]
->>>>>>> updated-ui
 };
 
 var convertData = function (data) {
@@ -1701,7 +1697,7 @@ var convertData = function (data) {
 
 var calculateSymbolSize = function (val) {
     // 开方减小数值差异
-    return Math.pow(val[2], 0.25) * 15;
+    return Math.pow(val[2], 0.3) * 10;
 }
 
 window.addEventListener('load', function () {
